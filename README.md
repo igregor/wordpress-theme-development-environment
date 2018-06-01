@@ -15,12 +15,30 @@ Docker Compose [find it here](https://docs.docker.com/compose/install/)
 
 ### Installing
 
-TODO
+
+### Running
 ```
-TODO code
+$ docker-compose up -d
 ```
 
-And repeat
+At this point, WordPress should be running on port 8000, You need to complete the five-minute installation    
+
+To run phpMyAdmin: http://localhost:8080/
+To run Wordpress: http://localhost:8000/
+
+### Shutting down
+```
+$ docker-compose down
+```
+removes the containers and default network, but preserves your WordPress database.
+
+```
+$ docker-compose down --volumes
+```
+removes the containers, default network, and the WordPress database.
+
+
+TODO
 
 ## Features already developed:
 in progress
@@ -41,11 +59,11 @@ in progress
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://#) for details on our code of conduct, and the process for submitting pull requests to us.
+TODO
 
 ## Authors
 
-* **iGregor** - *Initial work* - [PurpleBooth]()
+* **iGregor** - *Initial work*
 
 ## License
 
